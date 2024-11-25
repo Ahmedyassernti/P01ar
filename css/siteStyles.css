@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --myBlue: #2c3e50;
+    --myDarkBlue:#1a252f;
+    --myGreen: #1abc9c;
+    --myWhite: #ffffff;
+    --mainFont: "Montserrat";
+    --titleFontSize : 50px;
+}
+
+body {
+    direction: rtl;
+}
+
+
+nav {
+    background-color: var(--myBlue);
+    color: var(--myWhite);
+    font-family: var(--mainFont);
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 104px;
+    font-size: 20px;
+    padding: 24px 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav #menuItems {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+nav a {
+    text-decoration: none;
+    color: var(--myWhite);
+}
+
+nav #menuButton {
+    display: none;
+}
+/* ----------------------  banner ---------------------------- */
+
+#banner {
+    text-align: center;
+    background-color: var(--myGreen);
+    padding-top: 70px;
+    padding-bottom: 50px;
+    font-family: var(--mainFont);
+    height: 678px;
+}
+#banner > * {
+    margin-top: 25px;
+}
+
+#banner h1 {
+    color: var(--myWhite);
+    text-transform: uppercase;
+    font-size: var(--titleFontSize);
+    font-family: var(--mainFont);
+    margin-top: 40px;
+    font-size: 60px;
+}
+
+#bannerPhoto {
+    width: 240px;
+    display: inline-block;
+}
+
+.lineStarLine {
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 550px;
+  }
+  
+  .lineStarLine hr {
+    width: 110px;
+    height: 5px;
+    background-color: var(--myWhite);
+    border-radius: 5px;
+  
+  }
+  
+  .lineStarLine hr:first-child {
+    margin-left: 125px;
+  
+  }
+  
+  .lineStarLine hr:last-child {
+    margin-right: 125px;
+  
+  }
+  
+  .lineStarLine svg {
+    fill: var(--myWhite);
+  }
+  
+  #banner div {
+    font-size: 24px;
+  
+    color: var(--myWhite);
+  }
+  
+
+
+/* ---------------------portfolio-------------------------------- */
+
+#portfolio {
+    text-align: center;
+    background-color: var(--myWhite);
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+#portfolio h1 {
+    text-transform: uppercase;
+    color: var(--myBlue);
+    font-size: var(--titleFontSize);
+    font-family: var(--mainFont);
+}
+
+#portfolio .lineStarLine hr  {
+    background-color: var(--myBlue);
+}
+
+#portfolio .lineStarLine svg {
+    fill: var(--myBlue) !important;
+}
+
+.portfolioCard {
+    width: 28%;
+    height: 250px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+#porfolioGallery {
+    height: 70vh;
+    padding: 0 10%;
+    margin: 0 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+
+.portfolioCard > div {
+    text-align: center;
+    font-family: var(--mainFont);
+    color: var(--myWhite);
+    font-size: 88px;
+    font-weight: bolder;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-color: var(--myGreen);
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.portfolioCard > div:hover {
+    opacity: 0.90;
+    transition: 0.3s all;
+}
+
+
+
+
+/* -------------------------  about --------------------------- */
+
+#about {
+
+    text-align: center;
+    background-color: var(--myGreen);
+    padding-top: 96px;
+    padding-bottom: 96px;
+    font-family: var(--mainFont);
+    color: var(--myWhite);
+    display: grid;
+    justify-items: center;
+
+
+}
+
+#about h1 {
+    text-transform: uppercase;
+    color: var(--myWhite);
+    font-size: var(--titleFontSize);
+    font-family: var(--mainFont);
+}
+
+#about .lineStarLine hr  {
+    background-color: var(--myWhite);
+}
+
+#paragraphs {
+    font-size: 20px;
+    font-weight: 450;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+    gap: 1rem;
+
+  p{
+    width: 500px;
+    text-align: start;
+  }  
+
+
+}
+
+#downloadButton {
+
+    margin: 24px 0 0;
+    text-decoration: none;
+    fill: transparent;
+    
+
+
+    a {
+        text-decoration: none;
+        color: var(--myWhite);
+    }
+
+    svg {
+        margin-right: 10px;
+
+    }
+
+    
+
+
+}
+
+#downloadButton button {
+
+    width: 233px;
+    height: 66px;
+    font-size: 20px;
+    background-color: var(--myGreen);
+    border-color: var(--myWhite);
+}
+
+ /* ----------------------  contact me ------------------------ */
+
+ #contactMe {
+    text-align: center;
+    background-color: var(--myWhite);
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+ #contactMe h1 {
+    text-transform: uppercase;
+    color: var(--myBlue);
+    font-size: var(--titleFontSize);
+    font-family: var(--mainFont);
+}
+
+#contactMe .lineStarLine hr  {
+    background-color: var(--myBlue);
+}
+
+#contactMe .lineStarLine svg {
+    fill: var(--myBlue) !important;
+}
+
+.formConatiner {
+    height: 80vh;
+    padding: 0 10%;
+    margin: 0 3%;
+    display: flex;
+    justify-content: center;
+    
+    
+    
+}
+
+.form {
+    height: 554px;
+    width: 770px;
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+
+    
+}
+
+.formItem {
+    width: 746px;
+    height: 88px;
+
+    input {
+        width: 100%;
+        height: 80%;
+    }
+
+
+}
+
+.formItemMessage {
+    width: 746px;
+    height: 160px;
+
+    input {
+        width: 100%;
+        height: 80%;
+    }
+}
+
+#sendButton{
+    align-self: start;
+}
+#sendButton button {
+    
+    width: 103px;
+    height: 66px;
+    font-size: 20px;
+    background-color: var(--myGreen);
+    color: var(--myWhite);
+    border-color: var(--myGreen);
+    
+}    
+    
+
+
+
+
+  /* -------------------  footer   --------------------------- */
+
+  #footer {
+
+    background-color: var(--myBlue);
+    height: 272px;
+    text-align: center;
+    color: var(--myWhite);
+    font-family: var(--mainFont);
+    padding: 80px 15%;
+  }
+  .footerContainer {
+
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    
+
+
+  }
+
+  .footerRow { 
+
+    display: flex;
+    flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+    padding: 0 20px;
+    
+    h2 {
+
+        margin-bottom: 24px;
+
+
+    }
+
+   P{
+
+    font-weight: 450;
+    gap: 1rem;
+    text-align: center;
+    
+
+   } 
+
+
+  }
+#aroundItem {
+
+
+	align-items: center;
+
+    a {
+        text-decoration: none;
+    }
+
+    svg {
+
+        width: 33px;
+        margin: 0 10px;
+        fill: var(--myWhite);
+
+    }
+
+
+    }
+  .footerItem {
+
+    width: 30%;
+    height: 112px;
+    max-width: 100%;
+    padding: 0 12px;
+
+
+  }
+
+  .copyright {
+
+    background-color: var(--myDarkBlue);
+    height: 72px;
+    margin: 24 auto;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+    color: var(--myWhite);
+    font-family: var(--mainFont);
+
+
+
+  }
+
+
+
+
+
+  /* --------------------mediaQuery---------------------- */
+  @media only screen and (max-width: 576px) {
+    nav {
+        color: red;
+    }
+    nav #menuItems {
+        display: none;
+        /* display: block; */
+        position: absolute;
+        left: 0; top: 88px;
+        width: 100%;
+        background-color: var(--myBlue);
+        padding-left: 10%;
+    }
+    nav #menuButton {
+        width: 20px;
+        display: block;
+    }
+  }
+
+
+
+
+  @media only screen and (max-width: 992px) {
+    .portfolioCard {
+        
+        width: 45%;
+        font-size: 4em;
+        margin: 10px 0;
+    
+    }
+    #porfolioGallery{
+
+       height: auto;   
+    }
+}
+  @media only screen and (max-width: 576px) {
+    .portfolioCard {
+        
+        width: 60%;
+        font-size: 4em;
+    }
+    #porfolioGallery{
+
+        height: auto;   
+     }
+}
+
+
+@media only screen and (max-width: 992px) {
+    #about .conainer
+     {
+       height: auto;
+    
+    }
+
+    #paragraphs div {
+
+        width: 50%;
+        margin: 10px 0;
+
+
+
+    }
+    
+}
+  @media only screen and (max-width: 576px) {
+    #about .conainer
+     {
+       height: auto;
+    
+    }
+
+    #paragraphs div {
+
+        width: 80%;
+        margin: 10px 0;
+
+
+
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .form {
+
+        height: auto;
+
+
+    }
+
+    .formItem {
+
+        width: 90%;
+        margin: 10px 0;
+
+    }
+
+    .formItemMessage {
+
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+@media only screen and (max-width: 576px) {
+
+    .form {
+
+        height: auto;
+
+
+    }
+
+    .formItem {
+
+        width: 100%;
+        margin: 10px 0;
+
+    }
+
+    .formItemMessage {
+
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .footerItem {
+        
+        width: 45%;
+        margin: 10px 0;
+    
+    }
+    #footer{
+
+       height: auto;   
+    }
+}
+  @media only screen and (max-width: 576px) {
+    .footerItem {
+        
+        width: 60%;
+    }
+    #footer{
+
+        height: auto;   
+     }
+}
